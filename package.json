@@ -14,7 +14,7 @@
   "license": "LGPL",
   "dependencies": {
     "pem": "^1.8.3",
-    "soap": "^0.16.0",
+    "soap": "^0.19.2",
     "uuid": "^3.0.1",
     "xml": "^1.0.1",
     "xml-crypto": "^0.8.4",
