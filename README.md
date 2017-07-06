@@ -51,12 +51,22 @@ Once you receive the init transaction response, you can call this method using t
 
 The callback, again, is a function that receives error and result params, in the result param you will find a JSON object with all buyer's data, check transbank documentation for more details about it (the XML response from transbank's servers is automatically transformed into json).
 
+
 ###acknowledgeTransaction
 If the payment is accepted, call this method with the token you got from transaction result :
 
     TBK.acknowledgeTransaction(token, callback)
 
 Remember then redirect the user to 'urlRedirection', field you can find in the JSON obtained through getTransactionResult.
+
+##AZURE DEPLOY NOTES!
+the intention of this fork  is a solution for deploying transbank on azure app services,
+for that reason... this fork has the next important changes:
+
+- Update soap version to 0.19.2 for remove the ursa dependency (ursa requires a native module which app services dont support yet)
+- Remove the ursa dependency in the transbank module
+- Add a variable to change the Pem module OPENSSL_PATH (in app services the openssl is not installed, soo the fix is to upload the openssl binary to the project, and add
+the configuration variable OPENSSL_PATH to the openssl path)
 
 
 THIS IS NOT AN OFFICIAL PLUGIN FROM TRANSBANK!
