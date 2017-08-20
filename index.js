@@ -1,4 +1,5 @@
-module.exports 	= {
-	TBK 	: require('./lib/tbk'),
-	config 	: require('./lib/config/secrets')
+module.exports = {
+	TBK: require('./lib/tbk'),
+	createClient: require('./lib/client'),
+	config: require('./lib/config/secrets')
 };

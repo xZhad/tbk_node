@@ -10,7 +10,10 @@
     "transbank",
     "tbk"
   ],
-  "author": "Fabián Bravo <fabian.bravo.abarca@gmail.com>",
+  "authors": [
+    "Fabián Bravo <fabian.bravo.abarca@gmail.com>",
+    "David Muñoz <dmunozgaete@gmail.com>"
+  ],
   "license": "LGPL",
   "dependencies": {
     "pem": "^1.8.3",
